@@ -1,0 +1,16 @@
+#AAB
+services:
+  motion-detector:
+    build: .
+    container_name: motion_detector
+    restart: unless-stopped
+    privileged: true  #  /dev/video0 and PiCamera
+    volumes:
+      - ./photos:/app/photos 
+    devices:
+      - /dev/vchiq 
+    environment:
+      - SENDER_EMAIL=xxx@gmail.com
+      - RECIPIENT_EMAIL=xxx@gmail.com
+      - EMAIL_PASSWORD=appPassWord
+      - DIFF_THRESHOLD = 5000

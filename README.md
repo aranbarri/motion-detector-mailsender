@@ -24,8 +24,8 @@ This project uses a Raspberry Pi with a PiCamera2 module (IMX219, OV5647) to det
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/motion-detector.git
-cd motion-detector
+git clone https://github.com/aranbarri/motion-detector-mailsender.git
+cd motion-detector-mailsender
 ```
 
 ### 2. Set your environment variables

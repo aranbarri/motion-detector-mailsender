@@ -12,7 +12,7 @@ This project uses a Raspberry Pi with a PiCamera2 module (IMX219, OV5647) to det
 
 ---
 
-## 🧰 Requirements
+##  Requirements
 - Raspberry Pi with PiCamera2 module - (IMX219, OV5647)
 - Raspberry Pi OS (Bullseye or newer)
 - Python 3.9+
@@ -20,7 +20,7 @@ This project uses a Raspberry Pi with a PiCamera2 module (IMX219, OV5647) to det
 
 ---
 
-## 🔧 Setup
+##  Setup
 
 ### 1. Clone the repository
 ```bash
@@ -39,7 +39,7 @@ EMAIL_PASSWORD=your_app_password
 DIFF_THRESHOLD=5000
 ```
 
-> 💡 Tip: Use an app-specific password if you have 2FA enabled on Gmail.
+> Use an app-specific password if you have 2FA enabled on Gmail.
 
 
 ### 3. Build and run

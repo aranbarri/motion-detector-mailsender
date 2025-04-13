@@ -34,7 +34,7 @@ def movement_detect(filename):
 
 # Start
 picam2 = Picamera2()
-camera_config = picam2.create_preview_configuration(main={"format": "BGR888", "size": (2028, 1520)})
+camera_config = picam2.create_preview_configuration(main={"format": "BGR888", "size": (int(CAMERA_WIDTH), int(CAMERA_HEIGHT))})
 picam2.configure(camera_config)
 picam2.start()
 time.sleep(2)

@@ -11,14 +11,16 @@ import os
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
 RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
-DIFF_THRESHOLD  =  os.environ.get(DIFF_THRESHOLD)
+DIFF_THRESHOLD = int(os.environ.get("DIFF_THRESHOLD"))
+CAMERA_WIDTH = int(os.environ.get("CAMERA_WIDTH"))
+CAMERA_HEIGHT = int(os.environ.get("CAMERA_HEIGHT"))
 
 def movement_detect(filename):
     msg = EmailMessage()
     msg["Subject"] = "Movement detected!!"
     msg["From"] = SENDER_EMAIL
     msg["To"] = RECIPIENT_EMAIL
-    msg.set_content(f{filename})
+    msg.set_content(f"{filename}")
 
     with open(filename, "rb") as f:
         img_data = f.read()
@@ -34,7 +36,7 @@ def movement_detect(filename):
 
 # Start
 picam2 = Picamera2()
-camera_config = picam2.create_preview_configuration(main={"format": "BGR888", "size": (int(CAMERA_WIDTH), int(CAMERA_HEIGHT))})
+camera_config = picam2.create_preview_configuration(main={"format": "BGR888", "size": (CAMERA_WIDTH,CAMERA_HEIGHT)})
 picam2.configure(camera_config)
 picam2.start()
 time.sleep(2)
@@ -59,7 +61,7 @@ try:
         print(f"Movimiento detectado: {movement_score} px")
 
         # Configure number of pixels 
-        if movement_score > int(DIFF_THRESHOLD):
+        if movement_score > DIFF_THRESHOLD:
             timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
             filename = f"motion_{timestamp}.jpg"
             cv2.imwrite(filename, frame)

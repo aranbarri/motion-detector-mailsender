@@ -1,6 +1,8 @@
 # 📸 Motion Detector and Email Sender with PiCamera2 and OpenCV
 
-This project uses a Raspberry Pi with a PiCamera2 module (IMX219, OV5647) to detect motion using OpenCV. When motion is detected, an image is saved and automatically sent to a configured email address. You can customize motion sensitivity and resolution easily using environment variables.
+This project uses a Raspberry Pi with a PiCamera2 module (IMX219, OV5647) to detect motion using OpenCV. 
+
+When motion is detected, an image is saved and automatically sent to a configured Gmail address. You can customize motion sensitivity and resolution easily using environment variables.
 
 ##  Features
 - Motion detection via frame differencing

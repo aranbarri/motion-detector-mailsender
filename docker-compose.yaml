@@ -14,3 +14,5 @@ services:
       - RECIPIENT_EMAIL=xxx@gmail.com
       - EMAIL_PASSWORD=appPassWord
       - DIFF_THRESHOLD = 5000
+      - CAMERA_WIDTH = 2028
+      - CAMERA_HEIGHT = 1520

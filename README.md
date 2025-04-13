@@ -32,7 +32,7 @@ cd motion-detector-mailsender
 
 ### 2. Set your environment variables
 
-Edit the `docker-compose.yml` or create a `.env` file:
+Edit the `docker-compose.yml`:
 
 ```env
 SENDER_EMAIL=youremail@gmail.com

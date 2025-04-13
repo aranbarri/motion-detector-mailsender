@@ -37,6 +37,8 @@ SENDER_EMAIL=youremail@gmail.com
 RECIPIENT_EMAIL=destination@example.com
 EMAIL_PASSWORD=your_app_password
 DIFF_THRESHOLD=5000
+CAMERA_WIDTH=640
+CAMERA_HEIGHT=480
 ```
 
 > Use an app-specific password if you have 2FA enabled on Gmail.
@@ -67,7 +69,7 @@ motion-detector/
 
 ## 🛠 Customize
 - Adjust motion sensitivity with the `DIFF_THRESHOLD` environment variable.
-- Change the capture resolution in `camera_config` in the Python script.
+- Change the capture resolution the same way.
 - Modify the email logic to send to multiple addresses or use other services (e.g. Telegram, Discord).
 
 ---

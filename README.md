@@ -58,13 +58,12 @@ The motion detection script will start and display a live preview. Images with d
 ## 🗂 Project Structure
 
 ```
-motion-detector/
-├── app/
-│   └── motion_detector.py      # Main script
+motion-detector-mailsender/
+├── detektor/
+│   └── motion_detektor.py      # Main script
 ├── Dockerfile                  # Container setup
 ├── docker-compose.yml          # Service configuration
 ├── requirements.txt            # Python dependencies
-└── .env                        # Email and detection settings
 ```
 
 ---

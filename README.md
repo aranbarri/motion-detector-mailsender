@@ -39,9 +39,8 @@ SENDER_EMAIL=youremail@gmail.com
 RECIPIENT_EMAIL=destination@example.com
 EMAIL_PASSWORD=your_app_password
 DIFF_THRESHOLD=5000
-CAMERA_WIDTH=640
-CAMERA_HEIGHT=480
-```
+CAMERA_WIDTH = 2028
+CAMERA_HEIGHT = 1520```
 
 > Use an app-specific password if you have 2FA enabled on Gmail.
 

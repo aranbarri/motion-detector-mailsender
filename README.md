@@ -47,7 +47,7 @@ CAMERA_HEIGHT = 1520
 
 ### 3. Build and run
 ```bash
-docker-compose up --build
+docker-compose up -d
 ```
 
 The motion detection script will start and display a live preview. Images with detected motion will be saved and emailed.
